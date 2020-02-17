@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+/* Global */
+body{
+	font-size: 18px;
+	padding:0;
+  	margin:0;
+  	background: url('../homework_5/images/pinkbackground.png') no-repeat;
+}
+
+.container {
+	margin: auto;
+	overflow: hidden;
+}
+
+ul {
+	margin:0;
+	padding: 0;
+}
+
+
+h1 {
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	font-size: 24px;
+	color: #454545;
+}
+
+h3 {
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #454545;
+	font-weight: bold;
+}
+
+p {
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #454545;
+}
+
+.title {
+	font-weight: bolder;
+	font-size: 33px;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-variant: normal;
+}
+
+.wrap {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+
+/* Header*/
+
+header {
+	background-color: white;
+	opacity: 85%;
+	padding-top: 10px;
+	min-height: 50px;
+	text-decoration: none;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	font-size: 18px;
+	margin: 0px; 
+}
+
+
+header li {
+	float:right;
+	display: inline;
+	padding: 0 20px 0 20px;
+} 
+
+header #branding {
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	font-size: 24px;
+	float: left;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+/* Nav pseudo classes*/
+header a:link {
+	color: #454545;
+	text-decoration: none;
+}
+
+header a:visited {
+	color: #454545;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #EFAB8E;
+	text-decoration: none;
+}
+
+header a:active {
+	color: #EFAB8E;
+	text-decoration: none;
+}
+
+
+/*Home Page*/
+
+#slogan {
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	font-size: 80px;
+	width: 400px;
+	height:443px;
+	font-weight: lighter;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 50px;
+	margin-right: 0px;
+	padding: 0px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+#plants {
+	float: right;
+	max-width: 100%;
+	height: auto;
+	display: inline;
+}
+
+#homebuns {
+	float:right;
+	max-width: 100%;
+	height:auto;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: -70px;
+}
+
+#shopnowbutton{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 50px;
+	margin-right: 0px;
+	padding: 15px;
+	border: 3px solid #454545;
+	border-bottom: 3px solid #454545;
+	border-radius: 100px;
+	text-decoration: none;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	font-size: 33px;
+}
+
+#shopnowbutton:link {
+	color: #454545;
+	text-decoration: none;
+}
+
+#shopnowbutton:visited {
+	color: #454545;
+	text-decoration: none;
+}
+
+#shopnowbutton:hover {
+	color: #EFAB8E;
+	text-decoration: none;
+	border-color: #EFAB8E;
+}
+
+#shopnowbutton:active {
+	color: #EFAB8E;
+	text-decoration: none;
+}
+
+/*Products Page*/
+
+.productbuns {
+	margin-left: 90px;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	max-width: 100%;
+	height: auto;
+}
+
+.label {
+	text-align: center; 
+	padding: 10px 20px;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	color: #454545;
+	position: relative;
+	width: 344px;
+}
+
+.label:link {
+	color: #454545;
+	text-decoration: none;
+}
+
+.label:visited {
+	color: #454545;
+	text-decoration: none;
+}
+
+.label:hover {
+	color: #EFAB8E;
+	text-decoration: none;
+}
+
+.label:active {
+	color: #454545;
+	text-decoration: none;
+}
+
+/* Product Details Page */
+
+.producttitle {
+	margin-top: 30px;
+	font-size: 27px;
+}
+
+.sideimage {
+	margin: 30px 40px 20px 50px;
+	float:left;
+}
+
+.productdescription {
+	width: 1270px;
+	margin-bottom: 25px;
+}
+
+.alignselector {
+	display: inline;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #454545;
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+
+.selector {
+	text-decoration: none;
+	color: #454545;
+}
+
+.selector:link {
+	color: #454545;
+	text-decoration: none;
+}
+
+.selector:visited {
+	color: #454545;
+	text-decoration: none;
+}
+
+.selector:hover {
+	color: #454545;
+	text-decoration: none;
+	border: solid;
+	border-color: #454545;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-width: 1px;
+}
+
+.selector:active {
+	color: #454545;
+	text-decoration: none;
+}
+
+#addtocart {
+	text-decoration: none;
+	background-color: white;
+	opacity: 85%;
+	border: solid;
+	padding: 15px;
+	border-radius: 50px;
+	color: #454545;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#addtocart:link {
+	color: #454545;
+	text-decoration: none;
+}
+
+#addtocart:visited {
+	color: #454545;
+	text-decoration: none;
+}
+
+#addtocart:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #454545;
+	border: solid;
+	padding: 15px;
+	border-radius: 50px;
+}
+
+#addtocart:active {
+	color: #454545;
+	text-decoration: none;
+}
+
+#price {
+	margin-top: 35px;
+}
+
+i {
+  border: solid;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  border-color: #454545;
+  margin-top: 50px;
+  margin-right: 15px;
+}
+
+.rightarrow {
+	transform: rotate(-45deg);
+}
+
+.infodropdown {
+	font-size: 20px;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	color: #454545;
+	font-variant: small-caps;
+	font-weight: lighter;
+}
+
+/* About page */
+.aboutdescription {
+	width: 1270px;
+	margin-bottom: 25px;
+}
+
+#abouttitle{
+	font-variant: small-caps;
+	font-size: 30px;
+	
+}
+
+.aboutimage{
+	margin: 12px 40px 20px 50px;
+	float:left;
+}
+
+/* Footer */
+
+footer {
+	padding:5px;
+  	margin-top:0px;
+  	color:#454545;
+  	background-color:#B2D0FC;
+  	text-align: center;
+  	min-height: 20px;
+  	top: -1000px;
+}
+
+
