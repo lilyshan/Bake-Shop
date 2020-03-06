@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<meta name = "author" content = "Lily Shan">
+		<title>Bun Bun Bake Shop | Blackberry Cinnamon Bun</title>
+		<link href="bunbunstyles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<script src = "bakeshop.js" async></script>
+	</head>
+
+	<body>
+		<header>
+			<div class= "container">
+				<nav>
+					<div id= "branding">
+					<a href="index.html">Bun Bun Bake Shop</a>
+					</div>
+					<ul>
+						<li><a href = "shoppingbag.html"><img src = "images/shoppingbagicon.png" alt = "shopping bag"></a>
+							<span id="quantityCount">00</span></li>
+						<li><img src ="images/searchicon.png" alt = "searchbar"></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section>
+			<h1 class = "title">My Bag</h1>
+			<div class = "wrap">
+					<div class = "productlist" class= "scroll">
+						<div class = "cart-items">
+							<div class="cart-row">
+								<div class = "cart-item">
+									<p id = "bagitemnumber"><span id = "bag-quantity"></span> items</p>
+									<img class = "cart-item-img" src = "images/blackberry-bag.png">
+									<h3 class = "cart-product-title">Blackberry Cinnamon Roll</h3>
+									<button class = "btn-remove">Remove</button>
+									<div> <!-- Quantity selector for Shopping Bag-->
+										<label class ="bagLabels">Quantity</label>
+											<select id = "quantity" onchange= "priceBagQuantityCounter()" class="bag-selectordropdowns">
+												<option value="-">-</option>
+                  								<option value="1">1</option>
+                  								<option value="3">3</option>
+                  								<option value="6">6</option>
+                  								<option value="12">12</option>
+                  							</select>
+									</div>
+									<div> <!-- Glazing selector for Shopping Bag-->
+										<label class = "bagLabels">Glazing</label>
+											<select class="bag-selectordropdowns">
+                  								<option value="none">None</option>
+                  								<option value="Sugar-milk">Sugar-milk</option>
+                  								<option value="Vanilla-milk">Vanilla-milk</option>
+                  								<option value="Double-chocolate">Double Chocolate</option>
+                  							</select>
+									</div>
+									<p id = "bag-price-format">Price: $<span id= "bag-price-details"></span></p>
+								</div>
+							</div>
+						</div>
+						<a id="backtoshopping" href = "products.html">Back to Shopping</a>
+					</div>
+					<h1 id= "summarytitle">Order Summary</h1>
+					<div class = "ordersummary">
+						<h3 class= "indent">Subtotal</h3><span id="subtotal"></span>
+						<h3 class= "indent">Discount</h3><span id="discount"></span>
+						<h3 class= "indent">Tax</h3><span id="tax"></span>
+						<hr>
+						<h2 class= "indent">Total</h2><span id= "total"></span>
+						<a id="checkout" href = "">Checkout</a>
+						<p>*In-store pickup only</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p> &copy;2020 | Lily Shan | Carnegie Mellon University</p>
+		</footer>
+</body>
+</html>
