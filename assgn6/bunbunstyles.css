@@ -94,7 +94,7 @@ header #branding {
 	text-decoration: none;
 }
 
-/* Nav pseudo classes*/
+/* Nav Pseudo Classes*/
 header a:link {
 	color: #454545;
 	text-decoration: none;
@@ -189,7 +189,7 @@ header a:active {
 	text-decoration: none;
 }
 
-/*PRODUCTS PAGE*/
+/* PRODUCTS PAGE */
 
 .productbuns {
 	margin-left: 90px;
@@ -365,9 +365,7 @@ i {
 	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-color: white;
-	border-radius: 50%;
 	color: #454545;
-	border: solid #454545 1px;
 	padding-left: 4px;
 	padding-right: 4px;
 	height: 15px;
@@ -415,6 +413,7 @@ i {
 	margin-top: 5px;
 	float: left;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .cart-product-title {
@@ -450,6 +449,7 @@ i {
 	background-color: transparent;
 	cursor: pointer;
 	overflow:hidden;
+	outline: none;
 	margin-bottom: 3px;
 	text-align: left;
 }
@@ -459,11 +459,30 @@ i {
 	font-weight: 900;
 }
 
+#editButton{
+	text-decoration: underline;
+	border: none;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+	color: #454545;
+	background-color: transparent;
+	cursor: pointer;
+	overflow:hidden;
+	margin-bottom: 3px;
+	text-align: left;
+	font-size: 11px;
+}
+
+#editButton:hover {
+	text-decoration: underline;
+	font-weight: 900;
+}
+
 #bag-price-format {
 	float: right;
 	margin-right: 30px;
 	margin-top: 0px;
 	padding: 0;
+
 }
 
 #backtoshopping {
@@ -521,7 +540,7 @@ h3.indent {
 .ordersummary{
 	background-color: #EBF3FF;
 	width: 40%;
-	height: 330px;
+	height: 360px;
 	position: relative;
 	flex: 0.5 0.5 0%;
 	margin: 30px 30px 25px -170px;
@@ -538,6 +557,8 @@ h3.indent {
 	font-size: 18px;
 	margin-bottom: 5px;
 	display: inline-block;
+	position: absolute;
+	top: 270px;
 }
 
 #checkout:link {
@@ -564,6 +585,61 @@ h3.indent {
 
 hr {
 	width: 90%;
+}
+
+#dollarsign{
+	float: right;
+	position: relative;
+	font-size: 30px;
+	top: -59px;
+	margin-right: 160px;
+	color: #454545;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+#subtotal {
+	float: right;
+	position: relative;
+	font-size: 24px;
+	top: -45px;
+	margin-right: 85px;
+	color: #454545;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+#discount {
+	float: right;
+	position: relative;
+	top: -45px;
+	font-size: 24px;
+	margin-right: 85px;
+	color: #454545;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+#tax {
+	float: right;
+	position: relative;
+	font-size: 24px;
+	top: -45px;
+	margin-right: 85px;
+	color: #454545;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+#total {
+	float: right;
+	position: relative;
+	font-size: 30px;
+	top: -99px;
+	margin-right: 90px;
+	color: #454545;
+	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+#pickupNote {
+	position: absolute;
+	top: 320px;
 }
 
 /* FOOTER */

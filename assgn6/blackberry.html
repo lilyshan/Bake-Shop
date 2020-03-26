@@ -8,10 +8,9 @@
 		<link href="bunbunstyles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-		<script src = "bakeshop.js" async></script>
 	</head>
 
-	<body>
+	<body onload = "onLoadProducts()">
 		<header>
 			<div class= "container">
 				<nav>
@@ -46,14 +45,14 @@
                   			<option value="12">12</option>
                   		</select>
 					<label class = "product-detailLabels">Glazing</label>
-						<select class="selectordropdowns">
+						<select id = "glazing" class="selectordropdowns">
                   			<option value="none">None</option>
                   			<option value="Sugar-milk">Sugar-milk</option>
                   			<option value="Vanilla-milk">Vanilla-milk</option>
                   			<option value="Double-chocolate">Double Chocolate</option>
                   		</select>
 						<h3 id="pricelabel">Price: $<span id ="price-details"></span></h3>
-						<button id="addtocart" type="button" onclick = "addToCartQuantityCount()">Add to Cart</button>
+						<button id="addtocart" type="button" onclick = "addToCart()">Add to Cart</button>
 				
 				<div class= "productinfo">
 					<!--allergy info collapsible-->
@@ -87,4 +86,8 @@
 		<footer>
 			<p> &copy;2020 | Lily Shan | Carnegie Mellon University</p>
 		</footer>
+
+
+		<script src = "bakeshop.js" type = "text/javascript"></script>
+
 	</body>
